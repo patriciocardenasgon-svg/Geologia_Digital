@@ -1,24 +1,14 @@
 ---
 layout: default
+title: "Patricio Cárdenas | Geología Digital"
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Patricio Cárdenas | Geología Digital</title>
-</head>
-<body>
+<h1>Publicaciones Recientes</h1>
 
-    <h1>Publicaciones Recientes</h1>
-
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-        </li>
-      {% endfor %}
-    </ul>
-
-</body>
-</html>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %b %Y" }}
+    </li>
+  {% endfor %}
+</ul>
