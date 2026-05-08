@@ -3,12 +3,57 @@ layout: default
 title: "Patricio Cárdenas | Geología Digital"
 ---
 
-<h1>Publicaciones Recientes</h1>
+<div style="text-align: center; margin-bottom: 40px;">
+  <h1>Exploración y Procesamiento Geológico</h1>
+  <p>Repositorio de informes técnicos, modelado geofísico y recursos educativos.</p>
+</div>
 
-<ul>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-bottom: 50px;">
+  <div style="flex: 1; min-width: 250px; text-align: center;">
+    <img src="/Geologia_Digital/imaganes/geofisica.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+    <p style="margin-top: 10px;"><b>Procesamiento Geofísico</b></p>
+  </div>
+  <div style="flex: 1; min-width: 250px; text-align: center;">
+    <img src="/Geologia_Digital/imaganes/mapeo.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+    <p style="margin-top: 10px;"><b>Mapeo Geológico</b></p>
+  </div>
+  <div style="flex: 1; min-width: 250px; text-align: center;">
+    <img src="/Geologia_Digital/imaganes/modelo.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+    <p style="margin-top: 10px;"><b>Modelado 3D</b></p>
+  </div>
+  <div style="flex: 1; min-width: 250px; text-align: center;">
+    <img src="/Geologia_Digital/imaganes/perfil1.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+    <p style="margin-top: 10px;"><b>Interpretación de Perfiles</b></p>
+  </div>
+</div>
+
+<hr>
+
+<h2>Publicaciones Recientes</h2>
+<ul style="list-style: none; padding-left: 0;">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %b %Y" }}
+    <li style="margin-bottom: 15px; padding: 10px; border-bottom: 1px inset #eee;">
+      <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 1.2em; text-decoration: none; color: #007bff;">
+        <b>{{ post.title }}</b>
+      </a> 
+      <span style="color: #666; margin-left: 10px;">- {{ post.date | date: "%d %b %Y" }}</span>
     </li>
   {% endfor %}
 </ul>
+
+<hr>
+
+<div style="background-color: #f4f4f4; padding: 30px; border-radius: 15px; text-align: center; margin-top: 50px; border: 1px solid #ccc;">
+  <h3 style="color: #333;">¿Te interesa mi trabajo o necesitas consultoría?</h3>
+  <p style="color: #555;">Podes escribirme directamente para consultas sobre geología, geofísica o materiales educativos.</p>
+  
+  <div style="margin-top: 20px;">
+    <a href="mailto:tu-correo@gmail.com" style="background-color: #28a745; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px;">📩 Enviar Correo Electrónico</a>
+  </div>
+
+  <div style="margin-top: 15px;">
+    <p>También podes seguirme en mis redes profesionales:</p>
+    <a href="#" style="margin: 0 10px; color: #0077b5; text-decoration: none; font-weight: bold;">LinkedIn</a> | 
+    <a href="https://github.com/patriciocardenasgon-svg" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">GitHub</a>
+  </div>
+</div>
