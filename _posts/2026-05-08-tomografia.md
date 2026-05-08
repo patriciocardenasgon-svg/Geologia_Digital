@@ -41,7 +41,8 @@ Antes de tocar cualquier software, el Excel debe estar limpio.
 Lo valores de profundidad y resistencia se obtiene de los datos de campo y  el cálculo de la distancia se describe a continuación 
 El cálculo de la Distancia (X)
 La distancia horizontal se calcula buscando el centro exacto entre los electrodos externos A y B. La fórmula es:
-X=(A+B)/2
+  X=(A+B)/2
+
 •	Limpieza: Eliminar valores negativos de resistividad (ruido de campo) y verificar que las profundidades sean negativas (eje Y descendente).
  
 3. Resultados y Visualización
@@ -62,6 +63,7 @@ De acuerdo a los valores de resistividad (Ω x m) observados, se identifican tr
 o	Interpretación: Esta zona (colores rojos intensos) indica un material mucho más resistivo. Podría tratarse de un nivel de gravas secas, restos de estructuras antiguas o una variación litológica hacia materiales más gruesos y menos porosos
 ![Descripción corta](/Geologia_Digital/imaganes/tomo.5.png)
 Figura 4. Visualización 3D mediante planos de resistividad apilada. Se observa la arquitectura interna de las capas de limos y gravas.
+
 Esta visualización permite identificar la continuidad vertical de las unidades. Por ejemplo, se observa cómo la unidad conductiva superficial disminuye su espesor hacia el Oeste, mientras que el cuerpo de alta resistividad (gravas) gana potencia en los niveles basales.
 
 4. Discusión
@@ -75,10 +77,12 @@ Surfer funciona de una manera distinta a los scripts típicos de Python:
 •	El problema del "Inventado": Como Surfer ve un espacio vacío en las esquinas superiores e inferiores fuera del triángulo de datos, intenta "predecir" qué valores habría ahí basándose en los puntos cercanos. Esto genera colores en zonas donde nunca mediste nada. 
 •	El archivo de recorte (.bln): Para que el mapa sea científicamente válido, debes aplicar un proceso de Blanking (recorte). Esto le dice al programa: "Aunque calculaste valores para toda el área, por favor borra o vuelve invisibles las zonas donde no hubo paso de corriente eléctrica". 
 ![Descripción corta](/Geologia_Digital/imaganes/tomo6.png)
+
 Este trabajo destaca la transición hacia flujos de trabajo basados en software libre, utilizando Python para romper la dependencia de licencias comerciales costosas y garantizar la reproducibilidad científica. La implementación de estos algoritmos fue posible gracias a la Inteligencia Artificial (IA), que actuó como un puente técnico para traducir la lógica geológica en scripts funcionales sin requerir experiencia previa en programación. Esta sinergia entre código abierto e IA potencia la autonomía del geólogo, permitiendo generar visualizaciones avanzadas de alta calidad técnica con una inversión económica mínima.
 
 
 Conclusiones
+
 •	Caracterización del Subsuelo: El estudio permitió identificar con éxito la arquitectura sedimentaria del subsuelo somero en el sector este del Parque 9 de Julio. Se confirmó la presencia de una secuencia granocreciente en profundidad, compuesta por una capa superficial limo-arcillosa de baja resistividad (20-45Ωxm) que transiciona hacia un nivel de arenas y gravas altamente resistivas (> 100 Ωxm) a partir de los 10 metros de profundidad. 
 •	Alcance del Método Eléctrico: La Tomografía de Resistividad Eléctrica (TRE) con un tendido de 48 metros demostró ser una herramienta eficaz para la prospección ambiental y geotécnica, logrando una profundidad de investigación efectiva de aproximadamente 15 metros, suficiente para detectar el techo de la unidad de gravas fluviales del Río Salí. 
 •	Validación Metodológica: La comparación entre el procesamiento en Python y Golden Surfer reveló que, si bien Surfer ofrece una estética suavizada ideal para la presentación final, el uso de scripts en Python permite una validación más rigurosa y fiel a la densidad real de los datos brutos, evitando extrapolaciones sin sustento físico en las zonas de borde. 
