@@ -105,4 +105,17 @@ García, J. W. y D'Urso, C. H. (2015). Guía de Trabajos Prácticos: Métodos Ge
         crossorigin="anonymous"
         async>
 </script>
-
+<br>
+<hr>
+<div style="text-align: center; margin-top: 20px; margin-bottom: 50px;">
+  <a href="https://patriciocardenasgon-svg.github.io/Geologia_Digital/" 
+     style="padding: 12px 25px; 
+            background-color: #333; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            display: inline-block;">
+     ← Volver al Inicio
+  </a>
+</div>
