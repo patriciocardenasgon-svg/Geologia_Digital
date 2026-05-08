@@ -38,19 +38,17 @@ Antes de tocar cualquier software, el Excel debe estar limpio.
 Lo valores de profundidad y resistencia se obtiene de los datos de campo y  el cálculo de la distancia se describe a continuación 
 El cálculo de la Distancia (X)
 La distancia horizontal se calcula buscando el centro exacto entre los electrodos externos A y B. La fórmula es:
-
+![Descripción corta](/Geologia_Digital/imaganes/tomo.0.png)
 •	Limpieza: Eliminar valores negativos de resistividad (ruido de campo) y verificar que las profundidades sean negativas (eje Y descendente).
  
-
-
 3. Resultados y Visualización
 A continuación se presentan los perfiles de resistividad obtenidos:
-
+![Descripción corta](/Geologia_Digital/imaganes/tomo.1.png)
 Figura 1. Sección de resistividad eléctrica procesada en Python. Se observa la distribución discreta de los puntos de medición.
-
+![Descripción corta](/Geologia_Digital/imaganes/tomo.2.png)
 Figura 2: Modelo de contornos suavizado en Surfer. 
 Fue necesario recortar el modelo final para restringir la visualización únicamente al dominio donde existió información de campo efectiva
-
+![Descripción corta](/Geologia_Digital/imaganes/tomo.3.png)
 Figura3. Tomografía eléctrica con surfer después de aplicar el protocolo de recorte (blanking)
 
  Interpretación de Unidades Geofísicas
@@ -59,7 +57,7 @@ De acuerdo a los valores de resistividad (Ω x m) observados, se identifican tr
 2.	Cuerpo de Resistividad Intermedia (50 - 80 Ω X m): Predomina en la zona central y superficial. Corresponde probablemente a suelos franco-arenosos con compactación moderada. 
 3.	Anomalía de Alta Resistividad (> 100 Ω X m): Se detecta un cuerpo prominente en la base del perfil, entre las progresivas 20 y 30 metros, a una profundidad de -10 a -15 metros.
 o	Interpretación: Esta zona (colores rojos intensos) indica un material mucho más resistivo. Podría tratarse de un nivel de gravas secas, restos de estructuras antiguas o una variación litológica hacia materiales más gruesos y menos porosos
-
+![Descripción corta](/Geologia_Digital/imaganes/tomo.4.png)
 Figura 4. Visualización 3D mediante planos de resistividad apilada. Se observa la arquitectura interna de las capas de limos y gravas.
 Esta visualización permite identificar la continuidad vertical de las unidades. Por ejemplo, se observa cómo la unidad conductiva superficial disminuye su espesor hacia el Oeste, mientras que el cuerpo de alta resistividad (gravas) gana potencia en los niveles basales.
 
@@ -73,7 +71,7 @@ Surfer funciona de una manera distinta a los scripts típicos de Python:
 •	Extrapolación por defecto: Surfer es un programa de interpolación "rectangular". Cuando le das tus datos, él crea una rejilla (grid) que cubre desde el X mínimo al X máximo, y desde el Y mínimo al Y máximo. 
 •	El problema del "Inventado": Como Surfer ve un espacio vacío en las esquinas superiores e inferiores fuera del triángulo de datos, intenta "predecir" qué valores habría ahí basándose en los puntos cercanos. Esto genera colores en zonas donde nunca mediste nada. 
 •	El archivo de recorte (.bln): Para que el mapa sea científicamente válido, debes aplicar un proceso de Blanking (recorte). Esto le dice al programa: "Aunque calculaste valores para toda el área, por favor borra o vuelve invisibles las zonas donde no hubo paso de corriente eléctrica". 
-
+![Descripción corta](/Geologia_Digital/imaganes/tomo.5.png)
 Este trabajo destaca la transición hacia flujos de trabajo basados en software libre, utilizando Python para romper la dependencia de licencias comerciales costosas y garantizar la reproducibilidad científica. La implementación de estos algoritmos fue posible gracias a la Inteligencia Artificial (IA), que actuó como un puente técnico para traducir la lógica geológica en scripts funcionales sin requerir experiencia previa en programación. Esta sinergia entre código abierto e IA potencia la autonomía del geólogo, permitiendo generar visualizaciones avanzadas de alta calidad técnica con una inversión económica mínima.
 
 
