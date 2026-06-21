@@ -2,6 +2,7 @@
 layout: post
 title: "Evaluación de Tomografía Eléctrica 2D"
 date: 2026-05-08
+thumbnail: "/imaganes/tomo.5.png"
 ---
 
 Evaluación Comparativa de Procesamiento Geofísico: Implementación de Algoritmos en Python y Modelado en Golden Surfer para Tomografías Eléctricas 2D.
@@ -97,25 +98,5 @@ Conclusiones
 •	Innovación y Autonomía: Se demostró que la integración de software libre y herramientas de Inteligencia Artificial reduce significativamente los costos operativos y permite que profesionales sin experiencia avanzada en programación ejecuten análisis complejos y visualizaciones 3D de alta precisión. Este flujo de trabajo garantiza la reproducibilidad de los resultados y democratiza el acceso a tecnología geofísica de punta
 
 Referencias
+
 García, J. W. y D'Urso, C. H. (2015). Guía de Trabajos Prácticos: Métodos Geoeléctricos. Cátedra de Hidrogeología, Facultad de Ciencias Naturales e Instituto Miguel Lillo, Universidad Nacional de Tucumán.
-<script src="https://utteranc.es/client.js"
-        repo="patriciocardenasgon-svg/Geologia_Digital"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-<br>
-<hr>
-<div style="text-align: center; margin-top: 20px; margin-bottom: 50px;">
-  <a href="https://patriciocardenasgon-svg.github.io/Geologia_Digital/" 
-     style="padding: 12px 25px; 
-            background-color: #333; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 8px; 
-            font-weight: bold; 
-            display: inline-block;">
-     ← Volver al Inicio
-  </a>
-</div>

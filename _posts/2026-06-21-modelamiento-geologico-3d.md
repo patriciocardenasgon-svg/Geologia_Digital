@@ -2,6 +2,7 @@
 layout: post
 title: "Modelamiento Geológico 3D y Determinación de Recursos"
 date: 2026-06-21 14:00:00 -0300
+thumbnail: "/imaganes/modelo/figura4.png"
 ---
 
 # MODELAMIENTO GEOLÓGICO 3D Y DETERMINACIÓN DE RECURSOS DE UNA CANTERA DE YESO UTILIZANDO EL SOFTWARE LIBRE RECMIN
